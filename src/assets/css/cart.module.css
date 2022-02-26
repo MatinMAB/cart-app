@@ -1,0 +1,75 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  gap: 36px;
+  padding: 0 10px;
+}
+
+.products {
+  flex-grow: 1;
+}
+
+.checkout {
+  padding: 20px 10px 10px 10px;
+  width: 250px;
+  position: sticky;
+  top : 20px;
+  height: 150px;
+  border: 2px solid rgba(13, 228, 181, 0.438);
+  border-radius: 5px;
+  margin: 10px ;
+}
+.checkout p:nth-of-type(2){
+  margin: 14px 0;
+}
+
+.total {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.total p {
+  font-size: 20px;
+}
+
+.total p {
+  color: rgb(0, 134, 105);
+}
+
+.total button {
+  background-color: rgb(19, 235, 188);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 0 2px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.checked h3 ,.empty h3{
+  color : rgb(19,235,188);
+  margin-bottom:12px;
+}
+
+.checked a, .empty a{
+  color : #000;
+}
+
+
+@media screen and (max-width: 888px) {
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .products{
+    width: 100%;
+  }
+  .checkout {
+    width: 100%;
+    margin: 0px ;
+  }
+}
